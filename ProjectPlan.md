@@ -13,7 +13,7 @@ Datasets:
 2) https://github.com/metmuseum/openaccess
 3) https://github.com/art-institute-of-chicago/api-data
 
-Timeline:
+Timeline: (need to write out but this is rough outline)
 
 - bi-weekly meetings and deadlines
 - load in datas and understand information given in each dataset
