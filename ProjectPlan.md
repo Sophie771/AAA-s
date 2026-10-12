@@ -34,6 +34,7 @@ Datasets: In order to compare accessibility and information provided to the comm
 
 
 Constraints:
+A major constraint within this project is the difference in which the three museums collect and organize data, making comparisons more difficult. Each dataset was created uniquely to the museum for their own purpose, so while one museum may display some information, the other may not. This limits the amount of attributes that are comparable across the three museums. Additionally, the datasets alter in format, the NGA and the Met use CSV files, while the AIC uses JSON files. This leads to a potential of technical challenges when it is time to clean and organize the data into consitent categories. Another limitation when working with these datasets is their main focus on providing digital information about museums collections and spaces. This means the data will have less information capturing accessibility in a physical sense, such as wheelchair access, visitor expereince, etc. Finally, any incomplete or missing values could also affect results, making us account for all differences when analyzing and comparing the museums.
 
 Gaps:
 
