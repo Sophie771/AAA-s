@@ -1,20 +1,20 @@
 Overview: Our group’s goal is to compare how the National Gallery of Art(NGA), the Metropolitan Museum of Art(Met), and the Art Institute of Chicago(AIC) in terms of their accessibility and the information they provide to the community.  We can define accessibility based on the available data from their CSV and JSON files. These files provide data regarding physical accessibility such as the museum space itself, digital accessibility such as public domain, open access, and image licensing, and the information provided such as the cultural representation and artist data. Our plan is to explore each dataset individually to understand its structure and identify which attributes overlap amongst each dataset. We will clean each dataset separately and combine them into one file we can compare. We can then generate visualizations to see patterns in accessibility and information, and we can validate our findings by regarding existing gaps and limitations. As mentioned previously, we are getting data from CSV and JSON files, so this is an existing constraint in terms of data cleaning that may be more tedious. Also, these datasets mostly focus on digital records and not so much physical accessibility, so there may need to be some external research to investigate the accessibility of visiting each of these museums. Further, some datasets have differing dataset sizes and missing values, which means it will take even more thorough cleaning to ensure accuracy and a lack of bias. Once we are able to properly clean the data as well as potentially aggregate new information from external verified sources (the museums themselves) we will be able to analyze the data, and later on produce a report to answer our research question:  How can three different museums compare in terms of accessibility and the information they provide to the community?
 
 Team:
-  Arianna - in charge of understanding Datasets and completing Overview. Data visualization will be taken lead by Arianna, and we will generate more specific attributes to contribute to our definition of "accessibility".
+  Arianna - in charge of understanding Datasets. Data visualization will be taken lead by Arianna, and we will continue to refine our Research Question as necessary throughout the project timeline.
 
-  Anna - in charge of sending When to Meet to schedule bi-weekly meetings and discovering Gaps within our datasets. Anna will take lead in bringing up any issues that are of concern throughout our project. A constant "gut-check" is necessary for accuracy. 
+  Anna - in charge of the Overview and discovering Gaps within our datasets. Anna will take lead in bringing up any issues that are of concern throughout our project. A constant "gut-check" is necessary for accuracy. 
   
   Sophie - in charge of understanding Constraints and consistently checking in on our project's limitations. Sophie will focus on editing the entire project to ensure consistency and accuracy throughout. 
   
   Amy - in charge of Timeline and ensuring team contributes equally and frequently. Also will take lead on analysis of project, fostering discussion amongst entire group on how to best utilize data efficiently to answer our Research Question. 
 
-Research/Business Question: How can three different museums compare in terms of accessibility and the information they provide to the community?
+Research/Business Question: How do weather conditions affect flight delays and cancellations, and which U.S. airlines provide the most reliable and cost-effective service, especially when disruptions occur?
 
 Datasets:
-1) https://github.com/NationalGalleryOfArt/opendata/tree/main/data
-2) https://github.com/metmuseum/openaccess
-3) https://github.com/art-institute-of-chicago/api-data
+1) https://www.transtats.bts.gov/OT_Delay/
+2) https://www.transtats.bts.gov/DatabaseInfo.asp?QO_VQ=EFI
+3) https://noaa-global-hourly-pds.s3.amazonaws.com/index.html
 
 Timeline: 
 
