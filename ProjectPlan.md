@@ -13,7 +13,7 @@ Research/Business Question: How do weather conditions affect flight delays and c
 
 Datasets:
 1) https://www.transtats.bts.gov/OT_Delay/
-2) https://www.transtats.bts.gov/DatabaseInfo.asp?QO_VQ=EFI
+2) https://transtats.bts.gov/DatabaseInfo.asp?QO_VQ=EFD
 3) https://noaa-global-hourly-pds.s3.amazonaws.com/index.html
 
 Timeline: 
