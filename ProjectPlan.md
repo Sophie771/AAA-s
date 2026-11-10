@@ -12,7 +12,7 @@ Team:
 Research/Business Question: How do weather conditions affect flight delays and cancellations, and to what extent do higher-priced U.S. airlines offer more reliable flight experiences?
 
 Datasets:
-1) https://www.transtats.bts.gov/OT_Delay/
+1) https://data.bts.gov/Aviation/AFF-Average-Air-Fare-by-Carrier/gjp5-nh2u/about_data
 2) https://transtats.bts.gov/DatabaseInfo.asp?QO_VQ=EFD
 3) https://noaa-global-hourly-pds.s3.amazonaws.com/index.html
 
@@ -22,7 +22,7 @@ With an interim report deadline of 11/16 and a final project submission deadline
 
 In order to reach this goal, we will have meetings every 2 weeks to discuss the next steps and divide up work evenly amongst the entire team. Our current outline for our project plan of attack is as follows:
 
-1) We will load in the different datas and understand the information given in each data set. The flight data will be handled by Amy, the delays data will be sorted through by Anna, and the weather data will be completed by Sophie. Arianna will go over each dataset after it has been initially uploaded and organized by Amy, Anna, and Sophie to ensure that all is done correctly and all inconsistencies are fixed.
+1) We will load in the different datas and understand the information given in each data set. The flight price data will be handled by Amy, the delays data will be sorted through by Anna, and the weather data will be completed by Sophie. Arianna will go over each dataset after it has been initially uploaded and organized by Amy, Anna, and Sophie to ensure that all is done correctly and all inconsistencies are fixed.
 2) After meeting as a group, we will confirm that all of the data has been organized in an efficient and effective manner. We will then reassess our research question, confirming that this question can be answered through the datasets that we chose. If not, we will adjust by revising the datasets chosen. If so, we will move forward with the consolidation of the datasets. 
 3) Arianna will load in the 3 datasets into a combined file after it is determined that all 3 datasets have been cleaned adequately. Then, we will meet to observe any patterns after drawing up multiple visualizations for easier analysis. Amy will lead the process of understanding the different analysis that can be drawn from the combined data. Sophie and Anna will vigilantly comb through the data to ensure that there are no major limitations or gaps that we are not considering as a group. This is will lead us to our interim report deadline of 11/16, and once we determine that our data is consistent and organized as a combined file, we will create our interim report and submit.
 4) The final 2 week so of the project (the time between the interim report deadline and the final submission) will be focused on fine tuning our dataset and our answer to our original research question regarding the airline that is the most reliant and cost-effective. Arianna will focus on going through the data and visualizations again, Amy will take charge in fine tuning the analysis drawn, Sophie will check the consistency and accuracy by determining any limitations that are present, and Anna will also focus on accuracy of the project and ensure that we are not missing any gaps. This will lead us to our final submission deadline of 12/7.
