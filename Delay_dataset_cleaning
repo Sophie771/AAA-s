@@ -1,0 +1,1026 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNtILtz+tvpq4rmdgU6Oonc",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Sophie771/AAA-s/blob/main/Delay_dataset_cleaning\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 7,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NNvavpdzYdtm",
+        "outputId": "1a936d64-1eea-4f65-d17e-c01c05b1e9d7"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Files found: ['On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2025_6.csv']\n",
+            "Table size (rows, columns): (611575, 17)\n",
+            "Month\n",
+            "6    611575\n",
+            "Name: count, dtype: int64\n"
+          ]
+        }
+      ],
+      "source": [
+        "import pandas as pd\n",
+        "import glob\n",
+        "\n",
+        "cols = [\"Year\", \"Month\", \"FlightDate\", \"Reporting_Airline\", \"Origin\", \"Dest\",\n",
+        "        \"CRSDepTime\", \"DepTime\", \"DepDelay\", \"DepDel15\",\n",
+        "        \"Cancelled\", \"CancellationCode\",\n",
+        "        \"CarrierDelay\", \"WeatherDelay\", \"NASDelay\", \"SecurityDelay\", \"LateAircraftDelay\"]\n",
+        "\n",
+        "files = glob.glob(\"*.csv\")\n",
+        "print(\"Files found:\", files)\n",
+        "\n",
+        "df = pd.concat((pd.read_csv(f, usecols=cols) for f in files), ignore_index=True)\n",
+        "print(\"Table size (rows, columns):\", df.shape)\n",
+        "print(df[\"Month\"].value_counts())"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "import glob\n",
+        "\n",
+        "cols = [\"Year\", \"Month\", \"FlightDate\", \"Reporting_Airline\", \"Origin\", \"Dest\",\n",
+        "        \"CRSDepTime\", \"DepTime\", \"DepDelay\", \"DepDel15\",\n",
+        "        \"Cancelled\", \"CancellationCode\",\n",
+        "        \"CarrierDelay\", \"WeatherDelay\", \"NASDelay\", \"SecurityDelay\", \"LateAircraftDelay\"]\n",
+        "\n",
+        "files = glob.glob(\"*.csv\")\n",
+        "print(\"Files found:\", files)\n",
+        "\n",
+        "df = pd.concat((pd.read_csv(f, usecols=cols) for f in files), ignore_index=True)\n",
+        "print(\"Table size (rows, columns):\", df.shape)\n",
+        "print(df[\"Month\"].value_counts())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "q-FI5PxecWCp",
+        "outputId": "7ac5f97a-d259-4088-81dd-1e035554b6bc"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Files found: ['On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2025_6.csv']\n",
+            "Table size (rows, columns): (611575, 17)\n",
+            "Month\n",
+            "6    611575\n",
+            "Name: count, dtype: int64\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "import glob\n",
+        "\n",
+        "cols = [\"Year\", \"Month\", \"FlightDate\", \"Reporting_Airline\", \"Origin\", \"Dest\",\n",
+        "        \"CRSDepTime\", \"DepTime\", \"DepDelay\", \"DepDel15\",\n",
+        "        \"Cancelled\", \"CancellationCode\",\n",
+        "        \"CarrierDelay\", \"WeatherDelay\", \"NASDelay\", \"SecurityDelay\", \"LateAircraftDelay\"]\n",
+        "\n",
+        "files = glob.glob(\"*.csv\")\n",
+        "print(\"Files found:\", files)\n",
+        "\n",
+        "df = pd.concat((pd.read_csv(f, usecols=cols) for f in files), ignore_index=True)\n",
+        "print(\"Table size (rows, columns):\", df.shape)\n",
+        "print(df[\"Month\"].value_counts())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YuVPpY9Mc3qw",
+        "outputId": "475faac0-9b5e-4a15-8294-04554c619aab"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Files found: ['On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2025_6.csv']\n",
+            "Table size (rows, columns): (611575, 17)\n",
+            "Month\n",
+            "6    611575\n",
+            "Name: count, dtype: int64\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(glob.glob(\"*.csv\"))"
+      ],
+      "metadata": {
+        "id": "Pebmai-PdHQv"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import os\n",
+        "for name in os.listdir(\".\"):\n",
+        "    print(repr(name))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "fdSFsrIIedDH",
+        "outputId": "c5d43c2b-7b5e-4f2e-aad3-505c21c18b6b"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "'.config'\n",
+            "'On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2025_6.csv'\n",
+            "'sample_data'\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(glob.glob(\"**/*.csv\", recursive=True))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MRy64dX1e1eU",
+        "outputId": "61609967-d483-40f6-8ae7-61aa3e7604a5"
+      },
+      "execution_count": 12,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "['On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2025_6.csv', 'sample_data/mnist_test.csv', 'sample_data/mnist_train_small.csv', 'sample_data/california_housing_test.csv', 'sample_data/california_housing_train.csv']\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from google.colab import files\n",
+        "uploaded = files.upload()"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 93
+        },
+        "id": "b7q0Xoyue1zT",
+        "outputId": "41b0820d-f84e-421e-c4c4-fbda8bd40910"
+      },
+      "execution_count": 13,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.HTML object>"
+            ],
+            "text/html": [
+              "\n",
+              "     <input type=\"file\" id=\"files-83b0a6b0-72a4-48e2-8d99-c32c51fbad36\" name=\"files[]\" multiple disabled\n",
+              "        style=\"border:none\" />\n",
+              "     <output id=\"result-83b0a6b0-72a4-48e2-8d99-c32c51fbad36\">\n",
+              "      Upload widget is only available when the cell has been executed in the\n",
+              "      current browser session. Please rerun this cell to enable.\n",
+              "      </output>\n",
+              "      <script>// Copyright 2017 Google LLC\n",
+              "//\n",
+              "// Licensed under the Apache License, Version 2.0 (the \"License\");\n",
+              "// you may not use this file except in compliance with the License.\n",
+              "// You may obtain a copy of the License at\n",
+              "//\n",
+              "//      http://www.apache.org/licenses/LICENSE-2.0\n",
+              "//\n",
+              "// Unless required by applicable law or agreed to in writing, software\n",
+              "// distributed under the License is distributed on an \"AS IS\" BASIS,\n",
+              "// WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.\n",
+              "// See the License for the specific language governing permissions and\n",
+              "// limitations under the License.\n",
+              "\n",
+              "/**\n",
+              " * @fileoverview Helpers for google.colab Python module.\n",
+              " */\n",
+              "(function(scope) {\n",
+              "function span(text, styleAttributes = {}) {\n",
+              "  const element = document.createElement('span');\n",
+              "  element.textContent = text;\n",
+              "  for (const key of Object.keys(styleAttributes)) {\n",
+              "    element.style[key] = styleAttributes[key];\n",
+              "  }\n",
+              "  return element;\n",
+              "}\n",
+              "\n",
+              "// Max number of bytes which will be uploaded at a time.\n",
+              "const MAX_PAYLOAD_SIZE = 100 * 1024;\n",
+              "\n",
+              "function _uploadFiles(inputId, outputId) {\n",
+              "  const steps = uploadFilesStep(inputId, outputId);\n",
+              "  const outputElement = document.getElementById(outputId);\n",
+              "  // Cache steps on the outputElement to make it available for the next call\n",
+              "  // to uploadFilesContinue from Python.\n",
+              "  outputElement.steps = steps;\n",
+              "\n",
+              "  return _uploadFilesContinue(outputId);\n",
+              "}\n",
+              "\n",
+              "// This is roughly an async generator (not supported in the browser yet),\n",
+              "// where there are multiple asynchronous steps and the Python side is going\n",
+              "// to poll for completion of each step.\n",
+              "// This uses a Promise to block the python side on completion of each step,\n",
+              "// then passes the result of the previous step as the input to the next step.\n",
+              "function _uploadFilesContinue(outputId) {\n",
+              "  const outputElement = document.getElementById(outputId);\n",
+              "  const steps = outputElement.steps;\n",
+              "\n",
+              "  const next = steps.next(outputElement.lastPromiseValue);\n",
+              "  return Promise.resolve(next.value.promise).then((value) => {\n",
+              "    // Cache the last promise value to make it available to the next\n",
+              "    // step of the generator.\n",
+              "    outputElement.lastPromiseValue = value;\n",
+              "    return next.value.response;\n",
+              "  });\n",
+              "}\n",
+              "\n",
+              "/**\n",
+              " * Generator function which is called between each async step of the upload\n",
+              " * process.\n",
+              " * @param {string} inputId Element ID of the input file picker element.\n",
+              " * @param {string} outputId Element ID of the output display.\n",
+              " * @return {!Iterable<!Object>} Iterable of next steps.\n",
+              " */\n",
+              "function* uploadFilesStep(inputId, outputId) {\n",
+              "  const inputElement = document.getElementById(inputId);\n",
+              "  inputElement.disabled = false;\n",
+              "\n",
+              "  const outputElement = document.getElementById(outputId);\n",
+              "  outputElement.innerHTML = '';\n",
+              "\n",
+              "  const pickedPromise = new Promise((resolve) => {\n",
+              "    inputElement.addEventListener('change', (e) => {\n",
+              "      resolve(e.target.files);\n",
+              "    });\n",
+              "  });\n",
+              "\n",
+              "  const cancel = document.createElement('button');\n",
+              "  inputElement.parentElement.appendChild(cancel);\n",
+              "  cancel.textContent = 'Cancel upload';\n",
+              "  const cancelPromise = new Promise((resolve) => {\n",
+              "    cancel.onclick = () => {\n",
+              "      resolve(null);\n",
+              "    };\n",
+              "  });\n",
+              "\n",
+              "  // Wait for the user to pick the files.\n",
+              "  const files = yield {\n",
+              "    promise: Promise.race([pickedPromise, cancelPromise]),\n",
+              "    response: {\n",
+              "      action: 'starting',\n",
+              "    }\n",
+              "  };\n",
+              "\n",
+              "  cancel.remove();\n",
+              "\n",
+              "  // Disable the input element since further picks are not allowed.\n",
+              "  inputElement.disabled = true;\n",
+              "\n",
+              "  if (!files) {\n",
+              "    return {\n",
+              "      response: {\n",
+              "        action: 'complete',\n",
+              "      }\n",
+              "    };\n",
+              "  }\n",
+              "\n",
+              "  for (const file of files) {\n",
+              "    const li = document.createElement('li');\n",
+              "    li.append(span(file.name, {fontWeight: 'bold'}));\n",
+              "    li.append(span(\n",
+              "        `(${file.type || 'n/a'}) - ${file.size} bytes, ` +\n",
+              "        `last modified: ${\n",
+              "            file.lastModifiedDate ? file.lastModifiedDate.toLocaleDateString() :\n",
+              "                                    'n/a'} - `));\n",
+              "    const percent = span('0% done');\n",
+              "    li.appendChild(percent);\n",
+              "\n",
+              "    outputElement.appendChild(li);\n",
+              "\n",
+              "    const fileDataPromise = new Promise((resolve) => {\n",
+              "      const reader = new FileReader();\n",
+              "      reader.onload = (e) => {\n",
+              "        resolve(e.target.result);\n",
+              "      };\n",
+              "      reader.readAsArrayBuffer(file);\n",
+              "    });\n",
+              "    // Wait for the data to be ready.\n",
+              "    let fileData = yield {\n",
+              "      promise: fileDataPromise,\n",
+              "      response: {\n",
+              "        action: 'continue',\n",
+              "      }\n",
+              "    };\n",
+              "\n",
+              "    // Use a chunked sending to avoid message size limits. See b/62115660.\n",
+              "    let position = 0;\n",
+              "    do {\n",
+              "      const length = Math.min(fileData.byteLength - position, MAX_PAYLOAD_SIZE);\n",
+              "      const chunk = new Uint8Array(fileData, position, length);\n",
+              "      position += length;\n",
+              "\n",
+              "      const base64 = btoa(String.fromCharCode.apply(null, chunk));\n",
+              "      yield {\n",
+              "        response: {\n",
+              "          action: 'append',\n",
+              "          file: file.name,\n",
+              "          data: base64,\n",
+              "        },\n",
+              "      };\n",
+              "\n",
+              "      let percentDone = fileData.byteLength === 0 ?\n",
+              "          100 :\n",
+              "          Math.round((position / fileData.byteLength) * 100);\n",
+              "      percent.textContent = `${percentDone}% done`;\n",
+              "\n",
+              "    } while (position < fileData.byteLength);\n",
+              "  }\n",
+              "\n",
+              "  // All done.\n",
+              "  yield {\n",
+              "    response: {\n",
+              "      action: 'complete',\n",
+              "    }\n",
+              "  };\n",
+              "}\n",
+              "\n",
+              "scope.google = scope.google || {};\n",
+              "scope.google.colab = scope.google.colab || {};\n",
+              "scope.google.colab._files = {\n",
+              "  _uploadFiles,\n",
+              "  _uploadFilesContinue,\n",
+              "};\n",
+              "})(self);\n",
+              "</script> "
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Saving On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2025_1.csv to On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2025_1.csv\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import pandas as pd\n",
+        "import glob\n",
+        "\n",
+        "cols = [\"Year\", \"Month\", \"FlightDate\", \"Reporting_Airline\", \"Origin\", \"Dest\",\n",
+        "        \"CRSDepTime\", \"DepTime\", \"DepDelay\", \"DepDel15\",\n",
+        "        \"Cancelled\", \"CancellationCode\",\n",
+        "        \"CarrierDelay\", \"WeatherDelay\", \"NASDelay\", \"SecurityDelay\", \"LateAircraftDelay\"]\n",
+        "\n",
+        "files = glob.glob(\"*.csv\")\n",
+        "print(\"Files found:\", files)\n",
+        "\n",
+        "df = pd.concat((pd.read_csv(f, usecols=cols) for f in files), ignore_index=True)\n",
+        "print(\"Table size (rows, columns):\", df.shape)\n",
+        "print(df[\"Month\"].value_counts())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Zd2qB5-Be9Ba",
+        "outputId": "5bf41495-f4aa-420d-d643-a903f2a98308"
+      },
+      "execution_count": 14,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Files found: ['On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2025_6.csv', 'On_Time_Reporting_Carrier_On_Time_Performance_(1987_present)_2025_1.csv']\n",
+            "Table size (rows, columns): (1151322, 17)\n",
+            "Month\n",
+            "6    611575\n",
+            "1    539747\n",
+            "Name: count, dtype: int64\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(df.dtypes)\n",
+        "print()\n",
+        "print(\"Missing values:\")\n",
+        "print(df.isna().sum())\n",
+        "print()\n",
+        "print(\"Duplicate rows:\", df.duplicated().sum())"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "vqXTdulQnYNs",
+        "outputId": "b2d59022-7b3a-4bda-837e-674021e60692"
+      },
+      "execution_count": 15,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Year                   int64\n",
+            "Month                  int64\n",
+            "FlightDate            object\n",
+            "Reporting_Airline     object\n",
+            "Origin                object\n",
+            "Dest                  object\n",
+            "CRSDepTime             int64\n",
+            "DepTime              float64\n",
+            "DepDelay             float64\n",
+            "DepDel15             float64\n",
+            "Cancelled            float64\n",
+            "CancellationCode      object\n",
+            "CarrierDelay         float64\n",
+            "WeatherDelay         float64\n",
+            "NASDelay             float64\n",
+            "SecurityDelay        float64\n",
+            "LateAircraftDelay    float64\n",
+            "dtype: object\n",
+            "\n",
+            "Missing values:\n",
+            "Year                       0\n",
+            "Month                      0\n",
+            "FlightDate                 0\n",
+            "Reporting_Airline          0\n",
+            "Origin                     0\n",
+            "Dest                       0\n",
+            "CRSDepTime                 0\n",
+            "DepTime                25058\n",
+            "DepDelay               25125\n",
+            "DepDel15               25125\n",
+            "Cancelled                  0\n",
+            "CancellationCode     1125274\n",
+            "CarrierDelay          883787\n",
+            "WeatherDelay          883787\n",
+            "NASDelay              883787\n",
+            "SecurityDelay         883787\n",
+            "LateAircraftDelay     883787\n",
+            "dtype: int64\n",
+            "\n",
+            "Duplicate rows: 32\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Remove exact duplicate rows\n",
+        "df = df.drop_duplicates()\n",
+        "\n",
+        "# Turn FlightDate from text into a real date\n",
+        "df[\"FlightDate\"] = pd.to_datetime(df[\"FlightDate\"])\n",
+        "\n",
+        "# Scheduled departure hour (0-23), used later to match hourly weather\n",
+        "df[\"CRSDepHour\"] = (df[\"CRSDepTime\"] // 100) % 24\n",
+        "\n",
+        "# Make the cancellation flag whole numbers\n",
+        "df[\"Cancelled\"] = df[\"Cancelled\"].astype(int)\n",
+        "\n",
+        "# Cancelled flights have no departure delay, so split into two tables\n",
+        "cancelled = df[df[\"Cancelled\"] == 1]\n",
+        "flown = df[df[\"Cancelled\"] == 0].copy()\n",
+        "\n",
+        "print(\"All flights:\", len(df))\n",
+        "print(\"Cancelled:\", len(cancelled))\n",
+        "print(\"Flown:\", len(flown))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "n0rAaicinY0Z",
+        "outputId": "8f3fd3c9-e2b1-4533-f020-5934af7c1f65"
+      },
+      "execution_count": 16,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "All flights: 1151290\n",
+            "Cancelled: 26038\n",
+            "Flown: 1125252\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "by_airline = df.groupby(\"Reporting_Airline\").agg(\n",
+        "    flights=(\"Cancelled\", \"size\"),\n",
+        "    cancel_rate=(\"Cancelled\", \"mean\"),\n",
+        "    delay_rate=(\"DepDel15\", \"mean\"),\n",
+        "    avg_dep_delay=(\"DepDelay\", \"mean\"),\n",
+        ")\n",
+        "by_airline = by_airline.sort_values(\"delay_rate\")\n",
+        "by_airline"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 519
+        },
+        "id": "IXZcBJWktW-n",
+        "outputId": "c4560241-ffef-48d5-9c23-eb357fc0da77"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "execute_result",
+          "data": {
+            "text/plain": [
+              "                   flights  cancel_rate  delay_rate  avg_dep_delay\n",
+              "Reporting_Airline                                                 \n",
+              "HA                   13529     0.010422    0.138474       7.687071\n",
+              "YX                   56677     0.041957    0.175041       9.742748\n",
+              "UA                  128331     0.012663    0.201426      12.956943\n",
+              "MQ                   48727     0.030558    0.202610      11.234228\n",
+              "OO                  138693     0.013930    0.208762      15.686648\n",
+              "NK                   35167     0.023147    0.213411      11.608116\n",
+              "AS                   40739     0.010236    0.225269       8.988728\n",
+              "DL                  167428     0.022147    0.232295      15.798411\n",
+              "B6                   36871     0.012042    0.248662      15.205746\n",
+              "WN                  227655     0.016569    0.250223      13.222563\n",
+              "AA                  160507     0.030516    0.256613      20.135282\n",
+              "G4                   23128     0.007610    0.261142      17.957260\n",
+              "OH                   42254     0.079448    0.284996      24.897556\n",
+              "F9                   31584     0.028084    0.305659      22.601821"
+            ],
+            "text/html": [
+              "\n",
+              "  <div id=\"df-c6777a33-2c64-4506-b659-08e3ce18267d\" class=\"colab-df-container\">\n",
+              "    <div>\n",
+              "<style scoped>\n",
+              "    .dataframe tbody tr th:only-of-type {\n",
+              "        vertical-align: middle;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe tbody tr th {\n",
+              "        vertical-align: top;\n",
+              "    }\n",
+              "\n",
+              "    .dataframe thead th {\n",
+              "        text-align: right;\n",
+              "    }\n",
+              "</style>\n",
+              "<table border=\"1\" class=\"dataframe\">\n",
+              "  <thead>\n",
+              "    <tr style=\"text-align: right;\">\n",
+              "      <th></th>\n",
+              "      <th>flights</th>\n",
+              "      <th>cancel_rate</th>\n",
+              "      <th>delay_rate</th>\n",
+              "      <th>avg_dep_delay</th>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>Reporting_Airline</th>\n",
+              "      <th></th>\n",
+              "      <th></th>\n",
+              "      <th></th>\n",
+              "      <th></th>\n",
+              "    </tr>\n",
+              "  </thead>\n",
+              "  <tbody>\n",
+              "    <tr>\n",
+              "      <th>HA</th>\n",
+              "      <td>13529</td>\n",
+              "      <td>0.010422</td>\n",
+              "      <td>0.138474</td>\n",
+              "      <td>7.687071</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>YX</th>\n",
+              "      <td>56677</td>\n",
+              "      <td>0.041957</td>\n",
+              "      <td>0.175041</td>\n",
+              "      <td>9.742748</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>UA</th>\n",
+              "      <td>128331</td>\n",
+              "      <td>0.012663</td>\n",
+              "      <td>0.201426</td>\n",
+              "      <td>12.956943</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>MQ</th>\n",
+              "      <td>48727</td>\n",
+              "      <td>0.030558</td>\n",
+              "      <td>0.202610</td>\n",
+              "      <td>11.234228</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>OO</th>\n",
+              "      <td>138693</td>\n",
+              "      <td>0.013930</td>\n",
+              "      <td>0.208762</td>\n",
+              "      <td>15.686648</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>NK</th>\n",
+              "      <td>35167</td>\n",
+              "      <td>0.023147</td>\n",
+              "      <td>0.213411</td>\n",
+              "      <td>11.608116</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>AS</th>\n",
+              "      <td>40739</td>\n",
+              "      <td>0.010236</td>\n",
+              "      <td>0.225269</td>\n",
+              "      <td>8.988728</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>DL</th>\n",
+              "      <td>167428</td>\n",
+              "      <td>0.022147</td>\n",
+              "      <td>0.232295</td>\n",
+              "      <td>15.798411</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>B6</th>\n",
+              "      <td>36871</td>\n",
+              "      <td>0.012042</td>\n",
+              "      <td>0.248662</td>\n",
+              "      <td>15.205746</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>WN</th>\n",
+              "      <td>227655</td>\n",
+              "      <td>0.016569</td>\n",
+              "      <td>0.250223</td>\n",
+              "      <td>13.222563</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>AA</th>\n",
+              "      <td>160507</td>\n",
+              "      <td>0.030516</td>\n",
+              "      <td>0.256613</td>\n",
+              "      <td>20.135282</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>G4</th>\n",
+              "      <td>23128</td>\n",
+              "      <td>0.007610</td>\n",
+              "      <td>0.261142</td>\n",
+              "      <td>17.957260</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>OH</th>\n",
+              "      <td>42254</td>\n",
+              "      <td>0.079448</td>\n",
+              "      <td>0.284996</td>\n",
+              "      <td>24.897556</td>\n",
+              "    </tr>\n",
+              "    <tr>\n",
+              "      <th>F9</th>\n",
+              "      <td>31584</td>\n",
+              "      <td>0.028084</td>\n",
+              "      <td>0.305659</td>\n",
+              "      <td>22.601821</td>\n",
+              "    </tr>\n",
+              "  </tbody>\n",
+              "</table>\n",
+              "</div>\n",
+              "    <div class=\"colab-df-buttons\">\n",
+              "\n",
+              "  <div class=\"colab-df-container\">\n",
+              "    <button class=\"colab-df-convert\" onclick=\"convertToInteractive('df-c6777a33-2c64-4506-b659-08e3ce18267d')\"\n",
+              "            title=\"Convert this dataframe to an interactive table.\"\n",
+              "            style=\"display:none;\">\n",
+              "\n",
+              "  <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\" viewBox=\"0 -960 960 960\">\n",
+              "    <path d=\"M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z\"/>\n",
+              "  </svg>\n",
+              "    </button>\n",
+              "\n",
+              "  <style>\n",
+              "    .colab-df-container {\n",
+              "      display:flex;\n",
+              "      gap: 12px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert {\n",
+              "      background-color: #E8F0FE;\n",
+              "      border: none;\n",
+              "      border-radius: 50%;\n",
+              "      cursor: pointer;\n",
+              "      display: none;\n",
+              "      fill: #1967D2;\n",
+              "      height: 32px;\n",
+              "      padding: 0 0 0 0;\n",
+              "      width: 32px;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-convert:hover {\n",
+              "      background-color: #E2EBFA;\n",
+              "      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);\n",
+              "      fill: #174EA6;\n",
+              "    }\n",
+              "\n",
+              "    .colab-df-buttons div {\n",
+              "      margin-bottom: 4px;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert {\n",
+              "      background-color: #3B4455;\n",
+              "      fill: #D2E3FC;\n",
+              "    }\n",
+              "\n",
+              "    [theme=dark] .colab-df-convert:hover {\n",
+              "      background-color: #434B5C;\n",
+              "      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);\n",
+              "      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));\n",
+              "      fill: #FFFFFF;\n",
+              "    }\n",
+              "  </style>\n",
+              "\n",
+              "    <script>\n",
+              "      const buttonEl =\n",
+              "        document.querySelector('#df-c6777a33-2c64-4506-b659-08e3ce18267d button.colab-df-convert');\n",
+              "      buttonEl.style.display =\n",
+              "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
+              "\n",
+              "      async function convertToInteractive(key) {\n",
+              "        const element = document.querySelector('#df-c6777a33-2c64-4506-b659-08e3ce18267d');\n",
+              "        const dataTable =\n",
+              "          await google.colab.kernel.invokeFunction('convertToInteractive',\n",
+              "                                                    [key], {});\n",
+              "        if (!dataTable) return;\n",
+              "\n",
+              "        const docLinkHtml = 'Like what you see? Visit the ' +\n",
+              "          '<a target=\"_blank\" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'\n",
+              "          + ' to learn more about interactive tables.';\n",
+              "        element.innerHTML = '';\n",
+              "        dataTable['output_type'] = 'display_data';\n",
+              "        await google.colab.output.renderOutput(dataTable, element);\n",
+              "        const docLink = document.createElement('div');\n",
+              "        docLink.innerHTML = docLinkHtml;\n",
+              "        element.appendChild(docLink);\n",
+              "      }\n",
+              "    </script>\n",
+              "  </div>\n",
+              "\n",
+              "\n",
+              "  <div id=\"id_24263611-28e6-4bea-afc9-d30e32364683\">\n",
+              "    <style>\n",
+              "      .colab-df-generate {\n",
+              "        background-color: #E8F0FE;\n",
+              "        border: none;\n",
+              "        border-radius: 50%;\n",
+              "        cursor: pointer;\n",
+              "        display: none;\n",
+              "        fill: #1967D2;\n",
+              "        height: 32px;\n",
+              "        padding: 0 0 0 0;\n",
+              "        width: 32px;\n",
+              "      }\n",
+              "\n",
+              "      .colab-df-generate:hover {\n",
+              "        background-color: #E2EBFA;\n",
+              "        box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);\n",
+              "        fill: #174EA6;\n",
+              "      }\n",
+              "\n",
+              "      [theme=dark] .colab-df-generate {\n",
+              "        background-color: #3B4455;\n",
+              "        fill: #D2E3FC;\n",
+              "      }\n",
+              "\n",
+              "      [theme=dark] .colab-df-generate:hover {\n",
+              "        background-color: #434B5C;\n",
+              "        box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);\n",
+              "        filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));\n",
+              "        fill: #FFFFFF;\n",
+              "      }\n",
+              "    </style>\n",
+              "    <button class=\"colab-df-generate\" onclick=\"generateWithVariable('by_airline')\"\n",
+              "            title=\"Generate code using this dataframe.\"\n",
+              "            style=\"display:none;\">\n",
+              "\n",
+              "  <svg xmlns=\"http://www.w3.org/2000/svg\" height=\"24px\"viewBox=\"0 0 24 24\"\n",
+              "       width=\"24px\">\n",
+              "    <path d=\"M7,19H8.4L18.45,9,17,7.55,7,17.6ZM5,21V16.75L18.45,3.32a2,2,0,0,1,2.83,0l1.4,1.43a1.91,1.91,0,0,1,.58,1.4,1.91,1.91,0,0,1-.58,1.4L9.25,21ZM18.45,9,17,7.55Zm-12,3A5.31,5.31,0,0,0,4.9,8.1,5.31,5.31,0,0,0,1,6.5,5.31,5.31,0,0,0,4.9,4.9,5.31,5.31,0,0,0,6.5,1,5.31,5.31,0,0,0,8.1,4.9,5.31,5.31,0,0,0,12,6.5,5.46,5.46,0,0,0,6.5,12Z\"/>\n",
+              "  </svg>\n",
+              "    </button>\n",
+              "    <script>\n",
+              "      (() => {\n",
+              "      const buttonEl =\n",
+              "        document.querySelector('#id_24263611-28e6-4bea-afc9-d30e32364683 button.colab-df-generate');\n",
+              "      buttonEl.style.display =\n",
+              "        google.colab.kernel.accessAllowed ? 'block' : 'none';\n",
+              "\n",
+              "      buttonEl.onclick = () => {\n",
+              "        google.colab.notebook.generateWithVariable('by_airline');\n",
+              "      }\n",
+              "      })();\n",
+              "    </script>\n",
+              "  </div>\n",
+              "\n",
+              "    </div>\n",
+              "  </div>\n"
+            ],
+            "application/vnd.google.colaboratory.intrinsic+json": {
+              "type": "dataframe",
+              "variable_name": "by_airline",
+              "summary": "{\n  \"name\": \"by_airline\",\n  \"rows\": 14,\n  \"fields\": [\n    {\n      \"column\": \"Reporting_Airline\",\n      \"properties\": {\n        \"dtype\": \"string\",\n        \"num_unique_values\": 14,\n        \"samples\": [\n          \"WN\",\n          \"G4\",\n          \"HA\"\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"flights\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 67932,\n        \"min\": 13529,\n        \"max\": 227655,\n        \"num_unique_values\": 14,\n        \"samples\": [\n          227655,\n          23128,\n          13529\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"cancel_rate\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 0.01875564576284201,\n        \"min\": 0.007609823590453131,\n        \"max\": 0.07944809958820467,\n        \"num_unique_values\": 14,\n        \"samples\": [\n          0.01656893105796051,\n          0.007609823590453131,\n          0.010422056323453322\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"delay_rate\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 0.043752138443327974,\n        \"min\": 0.1384741713944461,\n        \"max\": 0.30565853658536585,\n        \"num_unique_values\": 14,\n        \"samples\": [\n          0.25022324617802544,\n          0.261142334335381,\n          0.1384741713944461\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    },\n    {\n      \"column\": \"avg_dep_delay\",\n      \"properties\": {\n        \"dtype\": \"number\",\n        \"std\": 5.128495790231994,\n        \"min\": 7.6870707673932515,\n        \"max\": 24.897556222273508,\n        \"num_unique_values\": 14,\n        \"samples\": [\n          13.222563044720674,\n          17.95726048882499,\n          7.6870707673932515\n        ],\n        \"semantic_type\": \"\",\n        \"description\": \"\"\n      }\n    }\n  ]\n}"
+            }
+          },
+          "metadata": {},
+          "execution_count": 17
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "df.to_csv(\"delays_clean.csv\", index=False)\n",
+        "from google.colab import files\n",
+        "files.download(\"delays_clean.csv\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 17
+        },
+        "id": "QM1RYpG2tcTW",
+        "outputId": "98373063-ad92-4f07-be8a-aeaf246e96c5"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.Javascript object>"
+            ],
+            "application/javascript": [
+              "\n",
+              "    async function download(id, filename, size) {\n",
+              "      if (!google.colab.kernel.accessAllowed) {\n",
+              "        return;\n",
+              "      }\n",
+              "      const div = document.createElement('div');\n",
+              "      const label = document.createElement('label');\n",
+              "      label.textContent = `Downloading \"${filename}\": `;\n",
+              "      div.appendChild(label);\n",
+              "      const progress = document.createElement('progress');\n",
+              "      progress.max = size;\n",
+              "      div.appendChild(progress);\n",
+              "      document.body.appendChild(div);\n",
+              "\n",
+              "      const buffers = [];\n",
+              "      let downloaded = 0;\n",
+              "\n",
+              "      const channel = await google.colab.kernel.comms.open(id);\n",
+              "      // Send a message to notify the kernel that we're ready.\n",
+              "      channel.send({})\n",
+              "\n",
+              "      for await (const message of channel.messages) {\n",
+              "        // Send a message to notify the kernel that we're ready.\n",
+              "        channel.send({})\n",
+              "        if (message.buffers) {\n",
+              "          for (const buffer of message.buffers) {\n",
+              "            buffers.push(buffer);\n",
+              "            downloaded += buffer.byteLength;\n",
+              "            progress.value = downloaded;\n",
+              "          }\n",
+              "        }\n",
+              "      }\n",
+              "      const blob = new Blob(buffers, {type: 'application/binary'});\n",
+              "      const a = document.createElement('a');\n",
+              "      a.href = window.URL.createObjectURL(blob);\n",
+              "      a.download = filename;\n",
+              "      div.appendChild(a);\n",
+              "      a.click();\n",
+              "      div.remove();\n",
+              "    }\n",
+              "  "
+            ]
+          },
+          "metadata": {}
+        },
+        {
+          "output_type": "display_data",
+          "data": {
+            "text/plain": [
+              "<IPython.core.display.Javascript object>"
+            ],
+            "application/javascript": [
+              "download(\"download_5cbdbced-eaa8-41c9-a3af-af0802e45a6a\", \"delays_clean.csv\", 73260107)"
+            ]
+          },
+          "metadata": {}
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from google.colab import drive\n",
+        "drive.mount('/content/drive')\n",
+        "df.to_csv(\"/content/drive/MyDrive/delays_clean.csv\", index=False)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "MCorFIN8tfXN",
+        "outputId": "960ad714-4744-4a9e-c54f-9d131c1b9c52"
+      },
+      "execution_count": 19,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Mounted at /content/drive\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "LYoyXh5tw107"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
