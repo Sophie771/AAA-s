@@ -1,0 +1,1586 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Year",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Year using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Year",
+    "expression": "value.toString()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Year using expression value.toString()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Year",
+          "expression": "value",
+          "columnName": "Year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Year_Quarter",
+          "expression": "value",
+          "columnName": "Year_Quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Year",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column Year using expression value.toUppercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Year",
+          "expression": "value",
+          "columnName": "Year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Year_Quarter",
+          "expression": "value",
+          "columnName": "Year_Quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "RpCarrier",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column RpCarrier using expression value.toUppercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Year",
+          "expression": "value",
+          "columnName": "Year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Year_Quarter",
+          "expression": "value",
+          "columnName": "Year_Quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Average Market Fare (Current $)",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column Average Market Fare (Current $) using expression value.toUppercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Year",
+          "expression": "value",
+          "columnName": "Year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Year_Quarter",
+          "expression": "value",
+          "columnName": "Year_Quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Market Passengers",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column Market Passengers using expression value.toUppercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Year",
+          "expression": "value",
+          "columnName": "Year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Year_Quarter",
+          "expression": "value",
+          "columnName": "Year_Quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Market Revenue (Current $)",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column Market Revenue (Current $) using expression value.toUppercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Year",
+          "expression": "value",
+          "columnName": "Year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Year_Quarter",
+          "expression": "value",
+          "columnName": "Year_Quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Market Passenger Miles Flown (sm)",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column Market Passenger Miles Flown (sm) using expression value.toUppercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Year",
+          "expression": "value",
+          "columnName": "Year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Year_Quarter",
+          "expression": "value",
+          "columnName": "Year_Quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Average Market Yield (Current $/sm)",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column Average Market Yield (Current $/sm) using expression value.toUppercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Year",
+          "expression": "value",
+          "columnName": "Year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Year_Quarter",
+          "expression": "value",
+          "columnName": "Year_Quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Average Market Miles Flown (sm)",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column Average Market Miles Flown (sm) using expression value.toUppercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Year",
+          "expression": "value",
+          "columnName": "Year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Year_Quarter",
+          "expression": "value",
+          "columnName": "Year_Quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CARRIER_NAME",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column CARRIER_NAME using expression value.toUppercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Year",
+          "expression": "value",
+          "columnName": "Year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Year_Quarter",
+          "expression": "value",
+          "columnName": "Year_Quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Year",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column Year using expression value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Year",
+          "expression": "value",
+          "columnName": "Year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Year_Quarter",
+          "expression": "value",
+          "columnName": "Year_Quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "RpCarrier",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column RpCarrier using expression value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Year",
+          "expression": "value",
+          "columnName": "Year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Year_Quarter",
+          "expression": "value",
+          "columnName": "Year_Quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Average Market Fare (Current $)",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column Average Market Fare (Current $) using expression value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Year",
+          "expression": "value",
+          "columnName": "Year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Year_Quarter",
+          "expression": "value",
+          "columnName": "Year_Quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Market Passengers",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column Market Passengers using expression value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Year",
+          "expression": "value",
+          "columnName": "Year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Year_Quarter",
+          "expression": "value",
+          "columnName": "Year_Quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Market Revenue (Current $)",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column Market Revenue (Current $) using expression value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Year",
+          "expression": "value",
+          "columnName": "Year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Year_Quarter",
+          "expression": "value",
+          "columnName": "Year_Quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Market Passenger Miles Flown (sm)",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column Market Passenger Miles Flown (sm) using expression value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Year",
+          "expression": "value",
+          "columnName": "Year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Year_Quarter",
+          "expression": "value",
+          "columnName": "Year_Quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Average Market Yield (Current $/sm)",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column Average Market Yield (Current $/sm) using expression value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Year",
+          "expression": "value",
+          "columnName": "Year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Year_Quarter",
+          "expression": "value",
+          "columnName": "Year_Quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "Average Market Miles Flown (sm)",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column Average Market Miles Flown (sm) using expression value.toLowercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "Year",
+          "expression": "value",
+          "columnName": "Year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "Year_Quarter",
+          "expression": "value",
+          "columnName": "Year_Quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "CARRIER_NAME",
+    "expression": "value.toLowercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 0,
+    "description": "Text transform on cells in column CARRIER_NAME using expression value.toLowercase()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Year",
+    "newColumnName": "year",
+    "description": "Rename column Year to year"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "RpCarrier",
+    "newColumnName": "rp_carrier",
+    "description": "Rename column RpCarrier to rp_carrier"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Average Market Fare (Current $)",
+    "newColumnName": "average market fare (current $)",
+    "description": "Rename column Average Market Fare (Current $) to average market fare (current $)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Market Passengers",
+    "newColumnName": "market passengers",
+    "description": "Rename column Market Passengers to market passengers"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Market Revenue (Current $)",
+    "newColumnName": "market revenue (current $)",
+    "description": "Rename column Market Revenue (Current $) to market revenue (current $)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Market Passenger Miles Flown (sm)",
+    "newColumnName": "market passenger miles flown (sm)",
+    "description": "Rename column Market Passenger Miles Flown (sm) to market passenger miles flown (sm)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Average Market Yield (Current $/sm)",
+    "newColumnName": "average market yield (current $/sm)",
+    "description": "Rename column Average Market Yield (Current $/sm) to average market yield (current $/sm)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Average Market Miles Flown (sm)",
+    "newColumnName": "average market miles flown (sm)",
+    "description": "Rename column Average Market Miles Flown (sm) to average market miles flown (sm)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "CARRIER_NAME",
+    "newColumnName": "carrier_name",
+    "description": "Rename column CARRIER_NAME to carrier_name"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "Year_Quarter",
+    "newColumnName": "year_quarter",
+    "description": "Rename column Year_Quarter to year_quarter"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "average market miles flown (sm)",
+    "newColumnName": "average_market_miles_flown_(sm)",
+    "description": "Rename column average market miles flown (sm) to average_market_miles_flown_(sm)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "average market yield (current $/sm)",
+    "newColumnName": "average_market_yield_(current_$/s/m)",
+    "description": "Rename column average market yield (current $/sm) to average_market_yield_(current_$/s/m)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "market passenger miles flown (sm)",
+    "newColumnName": "market_passenger_miles_flown_(sm)",
+    "description": "Rename column market passenger miles flown (sm) to market_passenger_miles_flown_(sm)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "market revenue (current $)",
+    "newColumnName": "market_revenue_(current_$)",
+    "description": "Rename column market revenue (current $) to market_revenue_(current_$)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "market passengers",
+    "newColumnName": "market_passengers",
+    "description": "Rename column market passengers to market_passengers"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "average market fare (current $)",
+    "newColumnName": "average_market_fare_(current_$)",
+    "description": "Rename column average market fare (current $) to average_market_fare_(current_$)"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "year",
+          "expression": "grel:value",
+          "columnName": "year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "year_quarter",
+          "expression": "grel:value",
+          "columnName": "year_quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "baseColumnName": "year_quarter",
+    "expression": "grel:if(value.contains(\"Jan\"), 1, if(value.contains(\"Apr\"), 2, null))",
+    "onError": "set-to-blank",
+    "newColumnName": "quarter",
+    "columnInsertIndex": 10,
+    "description": "Create column quarter at index 10 based on column year_quarter using expression grel:if(value.contains(\"Jan\"), 1, if(value.contains(\"Apr\"), 2, null))"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "rp_carrier",
+    "newColumnName": "reporting_airline",
+    "description": "Rename column rp_carrier to reporting_airline"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "year",
+          "expression": "grel:value",
+          "columnName": "year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "year_quarter",
+          "expression": "grel:value",
+          "columnName": "year_quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "reporting_airline",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column reporting_airline using expression value.toUppercase()"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "market_passengers",
+    "newColumnName": "passengers",
+    "description": "Rename column market_passengers to passengers"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "year",
+          "expression": "grel:value",
+          "columnName": "year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "year_quarter",
+          "expression": "grel:value",
+          "columnName": "year_quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "passengers",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column passengers using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "year",
+          "expression": "grel:value",
+          "columnName": "year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "year_quarter",
+          "expression": "grel:value",
+          "columnName": "year_quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "passengers",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column passengers using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "year",
+          "expression": "grel:value",
+          "columnName": "year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "year_quarter",
+          "expression": "grel:value",
+          "columnName": "year_quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "average_market_fare_(current_$)",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column average_market_fare_(current_$) using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "year",
+          "expression": "grel:value",
+          "columnName": "year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "year_quarter",
+          "expression": "grel:value",
+          "columnName": "year_quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "passengers",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column passengers using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "year",
+          "expression": "grel:value",
+          "columnName": "year",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025",
+                "l": "2025"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        },
+        {
+          "type": "list",
+          "name": "year_quarter",
+          "expression": "grel:value",
+          "columnName": "year_quarter",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "2025 Apr 01 12:00:00 AM",
+                "l": "2025 Apr 01 12:00:00 AM"
+              }
+            },
+            {
+              "v": {
+                "v": "2025 Jan 01 12:00:00 AM",
+                "l": "2025 Jan 01 12:00:00 AM"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "passengers",
+    "expression": "grel:toNumber(replace(value.toString(), \",\", \"\"))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column passengers using expression grel:toNumber(replace(value.toString(), \",\", \"\"))"
+  }
+]
