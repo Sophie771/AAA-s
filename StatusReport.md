@@ -10,6 +10,7 @@ So far, we have:
 2) **Completed** step 2 of meeting as a team and comparing datasets to confirm the scope of our research question. We were able to determine that these 3 datasets are able to be combined together to answer our research question, and we are now moving on to the following steps. This leads us to the interim deadline of 11/16, and our main interim deliverable is the combined dataset.
 
 Up next:
+
 3) Arianna will load in the 3 datasets into a combined file after determining that all 3 datasets have been adequately cleaned. Anna, Amy, and Sophie will review this combined file to ensure that all team members agree with the compatibility and combination of the dataset. We will then meet again to discuss the patterns that we notice from the dataset. At this point, we will start understanding the analysis and discussing what visualizations will be most effective and efficient to communicate the information of the dataset. We will also address any major limitations or gaps at this time.
 4) Once we have determined what visualizations to commit, we will execute and refine the final deliverable so that it is a strong final project. This will be completed by the final deadline of 12/7. We will also do a final review of the limitations and gaps present, addressing as many as we can to ensure a strong deliverable by the deadline. 
 
