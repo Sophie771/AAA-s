@@ -16,9 +16,10 @@ Up next:
 
 Since we have reached the interim deadline, at this point we do not expect any further modifications to our timeline. This is the timing of deliverables from here on out, and we will be following this timeline closely to ensure we are complete with the project by 12/7.
 
+Changes to the Project Plan:
 
-
-
+This project has undergone many changes since it has started. The main change is that the entire research question and topic has been shifted. It originally attempted to analyze museum art data, and compare it to different museums across the world in terms of funding, accessibility to visit the museums, and how funding affects the museums galleries. After receiving feedback from the second milestone, we realized that our data of different museums would not integrate with each other as the datasets were all on the same playing field and we needed them to work with each other to solve our research question. We attempted to keep the same topic and just adjust datasets, but this was proven to be very challenging, so we shifted topics entirely. We have now moved to work with weather, airline delay, and airfare data. This topic has much more prevalent data available and allows us to integrate the three chosen datasets together
+to answer our research question. As for the rest of our project plan, it remains to be very similar. We have divided up the datasets to clean, and are on path of combining the datasets and analyzing the patterns found within. Our timeline, however, is still not final and is subject to change as seen fit. 
 
 
 
@@ -28,36 +29,4 @@ Team Member Summaries
 
 Amy - My main responsibility is understanding and cleaning the Air Fare dataset. Because the original dataset that we chose for this purpose was unexpectedly invalid, I also had to find another dataset that would fit our scenario and help answer our research question. When cleaning the Air Fare dataset, I focused on the same dates and quarters as established by Anna's weather data, and I changed the columns to the pre-decided standardizations to ensure seamless integration with the other datasets. 
 
-
-
-
-
-
-
-
-Submit a report on the status of your project (~1000-1500 words):
-● In your project repository, create a new file named StatusReport.md that contains:
-○ An update on each of the tasks described on your project plan including references and
-links to specific artifacts in your repository (such as datasets, scripts, workflows,
-workflow diagrams, etc).
-○ An updated timeline indicating the status of each task and when they will be completed.
-○ A description of any changes to your project plan itself, in particular about your
-progress so far. Also include changes you made to your plan based on feedback you
-may have received for Milestone 2.
-○ Summarize any challenges or problems you have encountered so far. For each issue,
-explain how you resolved it or describe your plan to address it in the near future.
-○ Each team member has to write a short summary of their contributions to the current
-milestone. Each team member should add and commit their contribution summary
-themselves to the shared github repo.
-● Commit all in-progress work to your GitHub repository
-● Submit your status update
-○ Add and commit your StatusReport.md and any other related artifacts necessary for
-review.
-○ Push your changes to GitHub
-○ Create a status-report tag and release.
-○ Submit the URL to your status-report release to the assignment item in Canvas.
-● Expectation
-○ The StatusReport.md comprise contributions by both members of the team. The
-Individual contributions are evident by the Git commit history.
-○ The StatusReport.md is correctly formatted and structured in Markdown.
-○ All required information is clearly addressed in your update
+Anna - My main responsibility is understanding and cleaning the Delayed Flight dataset. I was the first in the group to clean my dataset, so I was able to pick the months that we would analyze in the data. These months were January and June of 2025. After cleaning the dataset, I provided my other teammates with steps they can take in cleaning their dataset so that the information pulled was consistent within each individually cleaned dataset. This allowed for the integration of all three datasets to be much smoother. I also contributed to this milestone by answering the changes to our project plan section. I also contributed to the revision of our second milestone by partaking in the meeting with the TA to discuss the original issues, meeting with the team separately to plan out our new project plan, and adjusting the gaps section of the project proposal as needed to work with our new data. 
