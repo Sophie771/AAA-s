@@ -7,12 +7,12 @@ Now that we are at the interim report deadline of 11/16, we have approximately 2
 So far, we have:
 
 1) **Completed** step 1 of loading in the 3 different datasets. We followed the breakdown that was established in the project plan to do so. We utilized similar column names to ease the process of combining the three datasets. A general review has also been done to confirm that there are no mistakes in loading and cleaning the 3 datatsets.
-   - Cleaned Dataset 1: 
-   - Cleaned Dataset 2:
-   - Cleaned Dataset 3:
+   - Cleaned Dataset 1: https://drive.google.com/file/d/1bkkLNLhGYTZp0vq7RHAfgzmdAU26i4tp/view?usp=drive_link
+   - Cleaned Dataset 2: https://drive.google.com/file/d/1_NBXFiq1sdnEnZ5BHLfdfkALgZXk-aqv/view?usp=drive_link
+   - Cleaned Dataset 3: https://drive.google.com/file/d/1_1e9WZg-BZ1dbj6xe0yQMMA_Nk5X1-21/view?usp=drive_link
 2) **Completed** step 2 of meeting as a team and comparing datasets to confirm the scope of our research question. We were able to determine that these 3 datasets are able to be combined together to answer our research question, and we are now moving on to the following steps. This leads us to the interim deadline of 11/16, and our main interim deliverable is the combined dataset.
 3) **Completed** step 3 of combining the three cleaned datasets into one dataset, so that we can analyze the relationships between air fares, flight delays, and weather.
-   - Combined Dataset: 
+   - Combined Dataset: https://drive.google.com/file/d/1vf7kaRPKSrCpz_n8FhRd-dS9TZhtr0yj/view?usp=sharing
 
 Up next:
 
@@ -35,3 +35,5 @@ Team Member Summaries
 Amy - My main responsibility is understanding and cleaning the Air Fare dataset. Because the original dataset that we chose for this purpose was unexpectedly invalid, I also had to find another dataset that would fit our scenario and help answer our research question. When cleaning the Air Fare dataset, I focused on the same dates and quarters as established by Anna's weather data, and I changed the columns to the pre-decided standardizations to ensure seamless integration with the other datasets. 
 
 Anna - My main responsibility is understanding and cleaning the Delayed Flight dataset. I was the first in the group to clean my dataset, so I was able to pick the months that we would analyze in the data. These months were January and June of 2025. After cleaning the dataset, I provided my other teammates with steps they can take in cleaning their dataset so that the information pulled was consistent within each individually cleaned dataset. This allowed for the integration of all three datasets to be much smoother. I also contributed to this milestone by answering the changes to our project plan section. I also contributed to the revision of our second milestone by partaking in the meeting with the TA to discuss the original issues, meeting with the team separately to plan out our new project plan, and adjusting the gaps section of the project proposal as needed to work with our new data. 
+
+Sophie - My main responsibility is understanding and cleaning the Weather dataset. 
