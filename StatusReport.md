@@ -7,7 +7,12 @@ Now that we are at the interim report deadline of 11/16, we have approximately 2
 So far, we have:
 
 1) **Completed** step 1 of loading in the 3 different datasets. We followed the breakdown that was established in the project plan to do so. We utilized similar column names to ease the process of combining the three datasets. A general review has also been done to confirm that there are no mistakes in loading and cleaning the 3 datatsets.
+   - Cleaned Dataset 1: 
+   - Cleaned Dataset 2:
+   - Cleaned Dataset 3:
 2) **Completed** step 2 of meeting as a team and comparing datasets to confirm the scope of our research question. We were able to determine that these 3 datasets are able to be combined together to answer our research question, and we are now moving on to the following steps. This leads us to the interim deadline of 11/16, and our main interim deliverable is the combined dataset.
+3) **Completed** step 3 of combining the three cleaned datasets into one dataset, so that we can analyze the relationships between air fares, flight delays, and weather.
+   - Combined Dataset: 
 
 Up next:
 
