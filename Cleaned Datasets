@@ -2,6 +2,9 @@ Cleaned delays dataset: https://drive.google.com/file/d/1bkkLNLhGYTZp0vq7RHAfgzm
 Cleaned air fare dataset: https://drive.google.com/file/d/1_NBXFiq1sdnEnZ5BHLfdfkALgZXk-aqv/view?usp=drive_link
 Cleaned weather dataset: https://drive.google.com/file/d/1_1e9WZg-BZ1dbj6xe0yQMMA_Nk5X1-21/view?usp=drive_link
 Merged dataset: https://drive.google.com/file/d/1vf7kaRPKSrCpz_n8FhRd-dS9TZhtr0yj/view?usp=sharing
+Link to the ipynb file that explains how I merged the dataset:
+https://drive.google.com/file/d/134yxily7ZHAhgKFxC6yg4wV8Inf1mtM2/view?usp=sharing
+
 -> Every flight of carrier X in Q1 or Q2 2025 receives the same average fare. Do not interpret the fare column as a per-route or per-flight price. 
 Fares are quarterly; delays and weather are monthly/hourly. A January flight gets the Q1 average; a June flight gets the Q2 average. That is a quarterly aggregation, not a per-flight price. 
 higher_priced definition used: top tercile (fare_pct_rank > 2/3) of airlines by average_market_fare_current, computed within each quarter. 
